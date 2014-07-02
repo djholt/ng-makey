@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html ng-app="makey">
+  <head>
+    <title>Makey Makey!</title>
+    <link rel="stylesheet" href="makey.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+  </head>
+  <body ng-controller="GameController" ng-keydown="keyPressed($event)">
+    <div id="box" ng-style="{left: boxPositionLeft, top: boxPositionTop}"></div>
+  </body>
+</html>
