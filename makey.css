@@ -1,7 +1,19 @@
-#box {
+body {
   background: #00F;
+  overflow: hidden;
+}
+
+#bird {
+  background: #0F0;
   border-radius: 8px;
-  height: 100px;
+  height: 30px;
   position: absolute;
-  width: 100px;
+  width: 30px;
+}
+
+.box {
+  background: #0FF;
+  height: 1000px;
+  position: absolute;
+  width: 75px;
 }

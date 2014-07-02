@@ -8,6 +8,7 @@
     <script src="controller.js"></script>
   </head>
   <body ng-controller="GameController" ng-keydown="keyPressed($event)">
-    <div id="box" ng-style="{left: boxPositionLeft, top: boxPositionTop}"></div>
+    <div id="bird" ng-style="{left: birdPositionLeft + 'px', top: birdPositionTop + 'px'}"></div>
+    <div class="box" ng-repeat="box in boxes" ng-style="{left: box.x + 'px', top: box.y + 'px'}"></div>
   </body>
 </html>
